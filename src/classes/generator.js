@@ -400,7 +400,7 @@ export default class Generator extends Common {
       else if (item.startsWith('date{')) output += moment().format(item.replace('date{', '').slice(0, -1));
       else if (item.startsWith('id{')) {
         const id = item.replace('id{', '').slice(0, -1);
-        if (!/^\d+$/.test(id)) throw new Error(`Id must be an integer (${id})`);
+        // if (!/^\d+$/.test(id)) throw new Error(`Id must be an integer (${id})`);
         output += (this._id) ? this._id : this.pad(0, id.length);
       } else throw new Error(`${item} pattern reference unknown`);
     }
