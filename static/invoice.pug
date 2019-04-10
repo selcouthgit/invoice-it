@@ -263,8 +263,6 @@ html(lang='en')
                         br
                         |       #{emitter_first_name} #{emitter_last_name}
                         br
-                        |       #{emitter_street_number} #{emitter_street_name}
-                        br
                         |       #{emitter_zip_code} #{emitter_city}
                         br
                         br
@@ -273,11 +271,9 @@ html(lang='en')
                         |       #{emitter_mail ? fromto_mail : ''} #{emitter_mail}
                 #to
                     p
-                        strong=recipient_company
+                        strong=recipient_first_name
                         br
                         |       #{recipient_first_name} #{recipient_last_name}
-                        br
-                        |       #{recipient_street_number} #{recipient_street_name}
                         br
                         |       #{recipient_zip_code} #{recipient_city}
                         br
