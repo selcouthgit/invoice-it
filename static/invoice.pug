@@ -261,9 +261,7 @@ html(lang='en')
                     p
                         strong=emitter_name
                         br
-                        |       #{emitter_first_name} #{emitter_last_name}
-                        br
-                        |       #{emitter_zip_code} #{emitter_city}
+                        |       #{emitter_city}
                         br
                         br
                         |       #{emitter_phone ? fromto_phone : ''} #{emitter_phone}
@@ -272,8 +270,6 @@ html(lang='en')
                 #to
                     p
                         strong=recipient_first_name
-                        br
-                        |       #{recipient_first_name} #{recipient_last_name}
                         br
                         |       #{recipient_zip_code} #{recipient_city}
                         br
