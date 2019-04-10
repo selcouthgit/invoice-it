@@ -10,7 +10,7 @@
   "invoice_header_date": "Invoice date :",
   "fromto_phone": "Phone:",
   "fromto_mail": "Email:",
-  "table_information": "Amounts expressed in Euros",
+  "table_information": "Amounts expressed in NRs.",
   "table_description": "Description",
   "table_tax": "VAT",
   "table_quantity": "Qt",
@@ -20,5 +20,5 @@
   "table_total_without_taxes": "Total exc. VAT",
   "table_total_taxes": "Total VAT",
   "table_total_with_taxes": "Total inc. VAT",
-  "footer": "Dim Solution inc - Registration: 87564738493127 <br> NAF-APE: 6202A - Num. VAT: EN28987856541"
+  "footer": "Selcouth Technology"
 }
