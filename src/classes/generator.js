@@ -16,6 +16,7 @@ export default class Generator extends Common {
     this._total_taxes = 0;
     this._total_inc_taxes = 0;
     this._article = [];
+    this._totalPrice = 0;
     this._i18nConfigure(config.language);
     this.hydrate(config.global, this._itemsToHydrate());
   }
@@ -185,6 +186,7 @@ export default class Generator extends Common {
         this.total_exc_taxes += Number(tmp[i].total_product_without_taxes);
         this.total_inc_taxes += Number(tmp[i].total_product_with_taxes);
         this.total_taxes += Number(tmp[i].total_product_taxes);
+        this.totalPrice = Number(tmp[i].total_product_with_taxes + tmp[i].dchagre); 
       }
     } else {
       this._checkArticle(tmp);
@@ -196,6 +198,8 @@ export default class Generator extends Common {
       this.total_exc_taxes += Number(tmp.total_product_without_taxes);
       this.total_inc_taxes += Number(tmp.total_product_with_taxes);
       this.total_taxes += Number(tmp.total_product_taxes);
+      this.totalPrice = Number(tmp.total_product_with_taxes + tmp.dchagre); 
+
     }
     this._article = (this._article) ? this._article.concat(tmp) : [].concat(tmp);
   }
